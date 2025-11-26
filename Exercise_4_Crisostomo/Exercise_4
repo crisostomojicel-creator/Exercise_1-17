@@ -1,1 +1,56 @@
+EXERCISE 4
+1.	List the first and last names of all employees who draw less than or equal to $90000 and are not Programmes, Senior programmers or Multimedia programmers. 
+Select f_name, l_name,salary from employee_data where salary  <= 90000 and  title not in ('Programmmers', 'Senior Programmers', 'Multimedia  Programmers');
+
+f_name	l_name	salary
+Mary	Anchor	85000
+Fred	Kruger	75000
+John	MacFarland	80000
+Edward	Sakamuro	75000
+Alok	Nanda	70000
+Hassan	Rajabi	90000
+Paul	Simon	85000
+Danny	Gibson	90000
+Hal	Simlai	70000
+Shahida	Ali	70000
+ 
+2.	What is displayed by the following statement? 
+SELECT I_name, f_name from employee_data where title NOT LIKE '%marketing% AND age < 30; 
+
+ l_name	f_name
+Sharma	Manish
+Pandit	Anamika
+Anchor	Mary
+Sakamuro	Edward
+ 
+
+3.	List all ids and names of all employees between 32 and 40 years of age.
+Select emp_id, f_name, l_name from employee_data where age BETWEEN 32 and 40;
+
+emp_id	f_name	l_name
+1	Rudolft	Reindeer
+3	Ganesh	Pillai
+7	John	MacFarland
+9	Alok	Nanda
+10	Hassan	Rajabi
+12	Arthur	Hoopla
+13	Kim	Hunter
+14	Roger	Lewis
+15	Danny	Gibson
+16	Mike	Harper
+20	Shahida	Ali
+21	Peter	Champion
+
+ 
+
+
+4.	Select names of all employees who are 32 years of age and are not programmers.
+Select f_name, l_name from employee_data where age = 32 and title not like 'Programmer%';
+
+ f_name	l_name
+Ganesh	Pillai
+Arthur	Hoopla
+Kim	Hunter
+Shahida	Ali
+ 
 
