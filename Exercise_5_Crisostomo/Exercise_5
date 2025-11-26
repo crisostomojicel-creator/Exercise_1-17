@@ -1,1 +1,68 @@
+EXERCISE 5 
+1.	List all employees who hold the titles of "Senior Programmer" and "Multimedia Programmer".
+Select f_name, l_name, title from employee_data where title like 'Senior Programmer%' Or title like 'Multimedia%';
+
+f_name	l_name	title
+Ganesh	Pillai	Senior Programmer
+John	MacFarland	Senior Programmer
+Hassan	Rajabi	Multimedia Programmer
+Paul	Simon	Multimedia Programmer
+Arthur	Hoopla	Multimedia Programmer
+ 
+2.	List all employee names with salaries for employees who draw between $70000 and $90000. 
+Select f_name, l_name, salary from employee_data where salary BETWEEN 70000 and 90000;
+
+f_name	l_name	salary
+Mary	Anchor	85000
+Fred	Kruger	75000
+John	MacFarland	80000
+Edward	Sakamuro	75000
+Alok	Nanda	70000
+Hassan	Rajabi	90000
+Paul	Simon	85000
+Danny	Gibson	90000
+Hal	Simlai	70000
+Shahida	Ali	70000
+ 
+3.	What will the following statement display?
+ SELECT f name, 1 name, title from employee_data where title NOT IN ('Programmer', 'Senior Programmer 'Multimedia Programmer');
+
+f_name	l_name	title
+Rudolft	Reindeer	Business Analyst
+Manish	Sharma	CEO
+Ganesh	Pillai	Senior Programmer
+Anamika	Pandit	Web Designer
+Mary	Anchor	Web Designer
+Fred	Kruger	Business Analyst
+John	MacFarland	Senior Programmer
+Edward	Sakamuro	Programmer
+Alok	Nanda	Programmer
+Hassan	Rajabi	Multimedia Programmer
+Paul	Simon	Multimedia Programmer
+Arthur	Hoopla	Multimedia Programmer
+Kim	Hunter	Senior Web Designer
+Roger	Lewis	System Administrators
+Danny	Gibson	System Administrators
+Mike	Harper	Senior Marketing Executive
+Monica	Sehgal	Marketing Executive
+Hal	Simlai	Marketing Executive
+Joseph	Irvine	Marketing Executive
+Shahida	Ali	Customer Service Manager
+Peter	Champion	Finance Manager
+
+ 
+ 4. Here is a more complex statement that combines both BETWEEN and IN. What will it display? 
+SELECT f name, 1 name, title, age from employee data where title NOT IN ('Programmer', 'Senior Programmer', 'Multimedia Programmer') AND age NOT BETWEEN 28 and 32;
+
+f_name	l_name	title	age
+Rudolft	Reindeer	Business Analyst	34
+Anamika	Pandit	Web Designer	27
+Mary	Anchor	Web Designer	26
+Roger	Lewis	System Administrators	35
+Danny	Gibson	System Administrators	34
+Mike	Harper	Senior Marketing Executive	36
+Hal	Simlai	Marketing Executive	27
+Joseph	Irvine	Marketing Executive	27
+Peter	Champion	Finance Manager	36
+ 
 
