@@ -1,1 +1,87 @@
+1.Write the SELECT statement to exact the ids of employees who are more than 30 years of age.
+	SELECT emp_id FROM employee_data WHERE age > 30;
+emp_id
+1
+3
+6
+7
+9
+10
+11
+12
+13
+14
+15
+16
+20
+21
+
+
+	 
+2.Write the SELECT statement to exact the first and last names of all web designers
+	SELECT f_name, l_name FROM employee_data WHERE title = 'Web Designer';
+f_name   l_name
+Anamika	Pandit
+Mary	Anchor
+	 
+3.What the following SELECT statement Display
+	SELECT * FROM employee_data Where salary <= 100000;
+
+ emp_id	f_name	l_name	title	age	yos	salary	perks	email
+1	Rudolft	Reindeer	Business Analyst	34	2	95000	17000	rundolft@bugnetcom
+3	Ganesh	Pillai	Senior Programmer	32	2	95000	17000	Ganesh@bugnetcom
+4	Anamika	Pandit	Web Designer	27	2	95000	17000	anamika@bugnetcom
+5	Mary	Anchor	Web Designer	26	2	85000	17000	mary@bugnetcom
+6	Fred	Kruger	Business Analyst	31	2	75000	17000	fred@bugnetcom
+7	John	MacFarland	Senior Programmer	34	2	80000	17000	john@bugnetcom
+8	Edward	Sakamuro	Programmer	25	2	75000	17000	edward@bugnetcom
+9	Alok	Nanda	Programmer	32	2	70000	17000	alok@bugnetcom
+10	Hassan	Rajabi	Multimedia Programmer	33	2	90000	17000	hasan@bugnetcom
+11	Paul	Simon	Multimedia Programmer	43	2	85000	17000	paul@bugnetcom
+13	Kim	Hunter	Senior Web Designer	32	2	95000	17000	kim@bugnetcom
+14	Roger	Lewis	System Administrators	35	2	100000	17000	roger@bugnetcom
+15	Danny	Gibson	System Administrators	34	2	90000	17000	dany@bugnetcom
+17	Monica	Sehgal	Marketing Executive	30	2	95000	17000	rundolft@bignetcom
+18	Hal	Simlai	Marketing Executive	27	2	70000	17000	hal@bignetcom
+20	Shahida	Ali	Customer Service Manager	32	2	70000	17000	shahida@bignetcom
+
+							
+
+4.How will you display the salaries and perks for employees who have more than 
+$16000 as perks.
+SELECT salary, perks FROM employee_data WHERE perks > 16000;
+
+salary	perks
+750000	17000
+720000	17000
+200000	17000
+120000	17000
+120000	17000
+100000	17000
+95000	17000
+95000	17000
+95000	17000
+95000	17000
+95000	17000
+90000	17000
+90000	17000
+85000	17000
+85000	17000
+80000	17000
+75000	17000
+75000	17000
+70000	17000
+70000	17000
+70000	17000
+
+
+
+ 
+
+5.List all the employee name (last name followed by first name) who hold the title of Marketing Executive.
+SELECT CONCAT (l_name, ',', f_name) AS full_name FROM employee_data WHERE Tittle = '	Markteting executive';
+ Employee_name
+
+
+
 
